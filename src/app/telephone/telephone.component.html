@@ -1,0 +1,37 @@
+<style>
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+</style>
+
+    <div class="card">
+      
+  
+    <div class="container">
+   
+        <ul>
+
+            <li> 
+                <img src="{{telephone.photo}}" width="15%" />
+                </li>
+            <li>   <h4>{{telephone.marque}}</h4></li>
+            <li>  <h4>{{telephone.modele}}</h4></li>
+            <li> <h4>{{telephone.prix}}</h4></li>
+            <li><input type="checkbox" text=""> basse degamme</li>
+        </ul>
+     <button type="submit" (click)="onClick()" > details</button>
+      
+    </div>
+  </div> 
